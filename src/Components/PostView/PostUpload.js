@@ -17,7 +17,7 @@ function PostUpload() {
   const submithandler = (e) => {
     e.preventDefault();
     console.log(image);
-    Axios.post("https://clone--insta.herokuapp.com/post/upload", {
+    Axios.post("https://insta-clone-backend-beta.vercel.app/post/upload", {
       name: user.username,
       location: user.location,
       imageUrl: image,

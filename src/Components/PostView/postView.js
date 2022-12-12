@@ -8,7 +8,7 @@ function PostView() {
 
   console.log(post);
   useEffect(() => {
-    Axios.get("https://clone--insta.herokuapp.com/post/fetch")
+    Axios.get("https://insta-clone-backend-beta.vercel.app/post/fetch")
       .then((res) => getPost(res.data.posts))
       .catch((err) => console.log(err));
     console.log(post);

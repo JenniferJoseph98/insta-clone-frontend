@@ -17,7 +17,7 @@ function PostUpload() {
   const submithandler = (e) => {
     e.preventDefault();
     console.log(image);
-    Axios.post("https://insta-clone-backend-beta.vercel.app/post/upload", {
+    Axios.post("https://instaclone-backend-l1vt.onrender.com/post/upload", {
       name: user.username,
       location: user.location,
       imageUrl: image,
